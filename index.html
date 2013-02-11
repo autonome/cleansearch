@@ -7,7 +7,6 @@
 <script language="Javascript" type="text/javascript">
 // Install app
 if (navigator.mozApps) {
-    document.querySelector('.installButton').style.display = 'block'
     var checkIfInstalled = navigator.mozApps.getSelf();
     checkIfInstalled.onsuccess = function () {
         if (checkIfInstalled.result) {
