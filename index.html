@@ -4,6 +4,47 @@
 <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
 <title>Google Search Widget</title>
 <script src="https://www.google.com/jsapi" type="text/javascript"></script>
+
+<style>
+  body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 9pt;
+    margin: 0 auto;
+  }
+  .installButton {
+    display: none;
+  }
+  TABLE.gsc-resultsHeader,
+  INPUT.gsc-search-button,
+  DIV.gsc-cursor-box.gs-bidi-start-align,
+  DIV.gs-watermark,
+  DIV.gsc-url-top,
+  DIV.gsc-clear-button,
+  TD.gsc-table-cell-snippet-close {
+    display: none;
+  }
+  TABLE.gsc-search-box {
+    width: 100%;
+  }
+  TABLE.gsc-search-box input {
+    width: 100%;
+  }
+  DIV.gsc-webResult.gsc-result {
+    padding: 0.4em;
+    border-bottom: 0.1em solid silver;
+  }
+  DIV.gs-title {
+    text-overflow: ellipsis;
+  }
+  DIV.gsc-webResult.gsc-result a {
+    text-decoration: none;
+    color: #000;
+  }
+</style>
+</head>
+<body>
+  <div id="searchcontrol">Loading</div>
+  <div class='installButton'><button>Install</button></div>
 <script language="Javascript" type="text/javascript">
 // Install app
 if (navigator.mozApps) {
@@ -73,45 +114,5 @@ else {
   }
   google.setOnLoadCallback(OnLoad);
 </script>
-<style>
-  body {
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 9pt;
-    margin: 0 auto;
-  }
-  .installButton {
-    display: none;
-  }
-  TABLE.gsc-resultsHeader,
-  INPUT.gsc-search-button,
-  DIV.gsc-cursor-box.gs-bidi-start-align,
-  DIV.gs-watermark,
-  DIV.gsc-url-top,
-  DIV.gsc-clear-button,
-  TD.gsc-table-cell-snippet-close {
-    display: none;
-  }
-  TABLE.gsc-search-box {
-    width: 100%;
-  }
-  TABLE.gsc-search-box input {
-    width: 100%;
-  }
-  DIV.gsc-webResult.gsc-result {
-    padding: 0.4em;
-    border-bottom: 0.1em solid silver;
-  }
-  DIV.gs-title {
-    text-overflow: ellipsis;
-  }
-  DIV.gsc-webResult.gsc-result a {
-    text-decoration: none;
-    color: #000;
-  }
-</style>
-</head>
-<body>
-  <div id="searchcontrol">Loading</div>
-  <div class='installButton'><button>Install</button></div>
 </body>
 </html>
