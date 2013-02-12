@@ -2,13 +2,15 @@
 <html>
 <head>
 <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Google Search Widget</title>
 <script src="https://www.google.com/jsapi" type="text/javascript"></script>
 
 <style>
   body {
+    max-width: 34em;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 9pt;
+    font-size: 1.1em;
     margin: 0 auto;
   }
   .installButton {
@@ -24,10 +26,16 @@
     display: none;
   }
   TABLE.gsc-search-box {
+    padding-top: 0.1em;
+    padding-left: 0.1em;
+    padding-right: 0.1em;
     width: 100%;
   }
   TABLE.gsc-search-box input {
-    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 98%;
+    font-size: 1.1em;
   }
   DIV.gsc-webResult.gsc-result {
     padding: 0.4em;
